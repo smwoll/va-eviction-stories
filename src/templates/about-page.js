@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
-import TransitionLink from 'gatsby-plugin-transition-link'
-import Link from 'gatsby-plugin-transition-link'
+
 
 
 import Layout from '../components/Layout'
