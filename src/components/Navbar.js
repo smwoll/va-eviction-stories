@@ -63,21 +63,29 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-links">
+              <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/">
+                Stories
+              </AniLink>
               <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/about">
                 About
               </AniLink>
               <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/products">
-                Products
+                Get Help
+              </AniLink>
+              <AniLink  cover bg="#ec1212"className="navbar-item sub-item" activeClassName="active" to="/contact">
+                Legal Help
+              </AniLink>
+              <AniLink  cover bg="#ec1212"className="navbar-item sub-item" activeClassName="active" to="/contact">
+                Housing Justice
+              </AniLink>
+              <AniLink  cover bg="#ec1212"className="navbar-item sub-item" activeClassName="active" to="/contact">
+                VPLC
               </AniLink>
               <AniLink  cover bg="#ec1212"className="navbar-item" activeClassName="active" to="/blog">
                 Blog
               </AniLink>
-              <AniLink  cover bg="#ec1212"className="navbar-item" activeClassName="active" to="/contact">
-                Contact
-              </AniLink>
-              <AniLink  cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/contact/examples">
-                Form Examples
-              </AniLink>
+              
+              
             </div>
             
           </div>
