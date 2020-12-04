@@ -1,7 +1,5 @@
 import React from 'react'
 import logo from '../img/logo.svg'
-import TransitionLink from 'gatsby-plugin-transition-link'
-import Link from 'gatsby-plugin-transition-link'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 
