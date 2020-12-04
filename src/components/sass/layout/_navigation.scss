@@ -60,7 +60,8 @@
     font-weight: 800;
     text-transform: uppercase;
     transition: all 0.4s ease;
-    padding: 5px 10px;
+    padding: 0px 10px;
+    width: max-content;
     &.sub-item {
       font-size: clamp(1em, 5vw, 3em);
     }
