@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
+import TransitionLink from 'gatsby-plugin-transition-link'
+import Link from 'gatsby-plugin-transition-link'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -51,9 +53,9 @@ const Navbar = class extends React.Component {
               <span></span>
               <span></span>
             </button>
-            <Link to="/" className="nav-logo" title="Logo">
+            <AniLink cover direction="up" bg="red" to="/" className="nav-logo" title="Logo">
               <img src={logo} alt="Stop Evictions Virginia Logo"/>
-            </Link>
+            </AniLink>
             
           </div>
           <div
@@ -61,21 +63,21 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-links">
-              <Link className="navbar-item" activeClassName="active" to="/about">
+              <AniLink cover bg="red" className="navbar-item" activeClassName="active" to="/about">
                 About
-              </Link>
-              <Link className="navbar-item" activeClassName="active" to="/products">
+              </AniLink>
+              <AniLink cover bg="red" className="navbar-item" activeClassName="active" to="/products">
                 Products
-              </Link>
-              <Link className="navbar-item" activeClassName="active" to="/blog">
+              </AniLink>
+              <AniLink  cover bg="red"className="navbar-item" activeClassName="active" to="/blog">
                 Blog
-              </Link>
-              <Link className="navbar-item" activeClassName="active" to="/contact">
+              </AniLink>
+              <AniLink  cover bg="red"className="navbar-item" activeClassName="active" to="/contact">
                 Contact
-              </Link>
-              <Link className="navbar-item" activeClassName="active" to="/contact/examples">
+              </AniLink>
+              <AniLink  cover bg="red" className="navbar-item" activeClassName="active" to="/contact/examples">
                 Form Examples
-              </Link>
+              </AniLink>
             </div>
             
           </div>
