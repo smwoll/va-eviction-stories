@@ -23,7 +23,7 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
+              navBarActiveClass: 'active',
             })
           : this.setState({
               navBarActiveClass: '',
@@ -41,44 +41,43 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
             {/* Hamburger menu */}
             <button
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`navbar-toggler ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
-              <span />
-              <span />
-              <span />
+              <span></span>
+              <span></span>
+              <span></span>
             </button>
+            <Link to="/" className="nav-logo" title="Logo">
+              <img src={logo} alt="Stop Evictions Virginia Logo"/>
+            </Link>
+            
           </div>
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+            <div className="navbar-links">
+              <Link className="navbar-item" activeClassName="active" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" activeClassName="active" to="/products">
                 Products
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" activeClassName="active" to="/blog">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" activeClassName="active" to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
+              <Link className="navbar-item" activeClassName="active" to="/contact/examples">
                 Form Examples
               </Link>
             </div>
-            <div className="navbar-end has-text-centered">
-             End of nav
-            </div>
+            
           </div>
         </div>
       </nav>

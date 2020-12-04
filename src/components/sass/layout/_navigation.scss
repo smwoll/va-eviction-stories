@@ -1,0 +1,215 @@
+.nav-logo {
+  width: 100%;
+  display: inline-block;
+  svg,
+  img {
+    width: 100%;
+    max-width: 80vw;
+    margin: auto;
+  }
+  margin-top: 50px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  z-index: 9999;
+  background: none;
+  border: none;
+  right: 0;
+}
+.navbar-toggler.active {
+  position: fixed;
+  z-index: 9999;
+  background: none;
+  border: none;
+  right: 0;
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh !important;
+  width: 100%;
+  overflow-y: auto;
+  visibility: hidden;
+  background: $red;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(100%);
+  z-index: 99;
+  display: grid;
+  opacity: 0.8;
+  place-items: center;
+  ul li {
+    display: none;
+  }
+  a {
+    color: $white;
+  }
+}
+.navbar-links {
+  display: grid;
+  align-items: center;
+  height: max-content;
+  grid-gap: 1em;
+  a {
+    text-decoration: none;
+    font-size: clamp(1.2em, 8vw, 4em);
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+    &:hover {
+      color: $dark;
+    }
+  }
+}
+
+.navbar-item.active {
+  color: $dark;
+}
+
+.navbar-menu.active {
+  visibility: visible;
+  transform: translateX(0);
+  height: 100vh;
+  opacity: 1;
+  ul li {
+    display: inline;
+  }
+}
+
+// animate entry of nav li items
+@keyframes nav-slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50vw);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.navbar ul li {
+  animation: nav-slide-in 0.3s ease-out both;
+  border-radius: 4px;
+  float: left;
+}
+
+@for $i from 1 through 20 {
+  .navbar ul li {
+    // :nth-child(1-12)
+    &:nth-child(#{$i}) {
+      // Delay the animation. Delay increases as items loop.
+      animation-delay: $i * (0.04s);
+    }
+  }
+}
+
+// end mobile
+
+.navbar-toggler {
+  z-index: 999;
+}
+
+.navbar {
+  .menu-item {
+    font-size: 2rem;
+    opacity: 1;
+    .nav-link {
+      color: $red;
+      transition: all 0.2s ease;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+// navbar toggler icon
+
+/* Icon 1 */
+
+.navbar-toggler {
+  display: block;
+  width: 60px;
+  height: 45px;
+  margin: 10px 10px 10px auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.navbar-toggler span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: $white;
+  border-radius: 0;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.navbar-toggler span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.navbar-toggler span:nth-child(2) {
+  top: 18px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.navbar-toggler span:nth-child(3) {
+  top: 36px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.navbar-toggler.active span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+.navbar-toggler.active span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.navbar-toggler.active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}

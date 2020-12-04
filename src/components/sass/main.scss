@@ -62,5 +62,14 @@
 @import "base/typography";
 
 // vendor - stuff from someone else
+// custom breakpoints has the breakpoints changed from default to small, medium, large
 @import "vendor/include-media";
 @import "vendor/custom-breakpoints";
+
+//  layout
+@import "layout/navigation";
+
+// components
+
+// theme
+@import "theme";
