@@ -53,7 +53,7 @@ const Navbar = class extends React.Component {
               <span></span>
               <span></span>
             </button>
-            <AniLink cover direction="up" bg="red" to="/" className="nav-logo" title="Logo">
+            <AniLink cover direction="up" bg="#ec1212" to="/" className="nav-logo" title="Logo">
               <img src={logo} alt="Stop Evictions Virginia Logo"/>
             </AniLink>
             
@@ -63,19 +63,19 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-links">
-              <AniLink cover bg="red" className="navbar-item" activeClassName="active" to="/about">
+              <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/about">
                 About
               </AniLink>
-              <AniLink cover bg="red" className="navbar-item" activeClassName="active" to="/products">
+              <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/products">
                 Products
               </AniLink>
-              <AniLink  cover bg="red"className="navbar-item" activeClassName="active" to="/blog">
+              <AniLink  cover bg="#ec1212"className="navbar-item" activeClassName="active" to="/blog">
                 Blog
               </AniLink>
-              <AniLink  cover bg="red"className="navbar-item" activeClassName="active" to="/contact">
+              <AniLink  cover bg="#ec1212"className="navbar-item" activeClassName="active" to="/contact">
                 Contact
               </AniLink>
-              <AniLink  cover bg="red" className="navbar-item" activeClassName="active" to="/contact/examples">
+              <AniLink  cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/contact/examples">
                 Form Examples
               </AniLink>
             </div>

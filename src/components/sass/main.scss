@@ -58,6 +58,7 @@
 @import "colors";
 
 // base
+// customized normalize.scss to fix issue with html line height resizing
 @import "base/normalize";
 @import "base/typography";
 
