@@ -11,8 +11,11 @@
   border: 5px $red solid;
   padding: 1em;
   overflow-x: none;
+  transition: all 0.2s ease;
   .title {
     font-size: 2em;
+    font-weight: 700;
+    color: $white;
     display: block;
     text-decoration: none;
   }
@@ -21,6 +24,27 @@
   }
   img {
     border-radius: 0;
+  }
+  &:hover {
+    transform: scale(1.01);
+    .read-more {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+.read-more {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include media(">medium") {
+    visibility: invisible;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateX(-20px);
   }
 }
 

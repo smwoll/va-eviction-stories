@@ -7,6 +7,15 @@ import BlogRoll from "../components/BlogRoll";
 
 export const IndexPageTemplate = ({ title, subheading, description }) => (
   <div>
+    <section className="mobile-cta">
+      <a
+        href="https://www.newvirginiamajority.org/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Take Action
+      </a>
+    </section>
     <main className="main-content">
       <div className="container">
         <div className="hero-wrapper">

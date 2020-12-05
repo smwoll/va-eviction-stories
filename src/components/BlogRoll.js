@@ -56,7 +56,7 @@ class BlogRoll extends React.Component {
                   className="read-more"
                   to={post.fields.slug}
                 >
-                  Read more →
+                  Read more &raquo;
                 </AniLink>
               </article>
             </div>
