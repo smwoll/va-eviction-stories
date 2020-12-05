@@ -1,9 +1,14 @@
 .blogroll-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -1em;
 }
 .blogroll-grid .card {
+  display: flex;
+  flex: 1 1 400px; /*  Stretching: */
+  margin: 1em;
   border: 5px $red solid;
-  margin: 1em 0;
   padding: 1em;
   overflow-x: none;
   .title {
@@ -14,6 +19,9 @@
   .date {
     font-size: 1rem;
   }
+  img {
+    border-radius: 0;
+  }
 }
 
 // media sizing for blogroll grid
@@ -23,8 +31,11 @@
     flex-wrap: wrap;
     justify-content: center;
     .card {
-      flex: 1 1 300px; /*  Stretching: */
-      margin: 5px;
+      flex: 1 1 400px; /*  Stretching: */
+      margin: 1em;
+    }
+    .card.featured {
+      flex: 1 1 600px; /*  Stretching: */
     }
   }
 }
