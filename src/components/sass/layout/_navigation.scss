@@ -56,14 +56,14 @@
 
   a {
     text-decoration: none;
-    font-size: clamp(1em, 10vw, 5em);
+    font-size: clamp(1em, 14vw, 4em);
     font-weight: 800;
     text-transform: uppercase;
     transition: all 0.4s ease;
     padding: 0px 10px;
     width: max-content;
     &.sub-item {
-      font-size: clamp(1em, 5vw, 3em);
+      font-size: clamp(1em, 6vw, 3em);
     }
     &:hover {
       color: $dark;

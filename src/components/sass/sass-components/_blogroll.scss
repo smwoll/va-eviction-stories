@@ -1,0 +1,30 @@
+.blogroll-grid {
+  display: grid;
+}
+.blogroll-grid .card {
+  border: 5px $red solid;
+  margin: 1em 0;
+  padding: 1em;
+  overflow-x: none;
+  .title {
+    font-size: 2em;
+    display: block;
+    text-decoration: none;
+  }
+  .date {
+    font-size: 1rem;
+  }
+}
+
+// media sizing for blogroll grid
+@include media(">small") {
+  .blogroll-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      flex: 1 1 300px; /*  Stretching: */
+      margin: 5px;
+    }
+  }
+}
