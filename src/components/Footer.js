@@ -72,45 +72,10 @@ const Footer = class extends React.Component {
                         Form Examples
                       </AniLink>
                     </li>
-                    <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
-                    </li>
                   </ul>
                 </section>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <AniLink
-                        cover
-                        bg="#ec1212"
-                        className="navbar-item"
-                        to="/blog"
-                      >
-                        Latest Stories
-                      </AniLink>
-                    </li>
-                    <li>
-                      <AniLink
-                        cover
-                        bg="#ec1212"
-                        className="navbar-item"
-                        to="/contact"
-                      >
-                        Contact
-                      </AniLink>
-                    </li>
-                  </ul>
-                </section>
-              </div>
+
               <div className="social-icons">
                 <a title="facebook" href="https://facebook.com">
                   <img
