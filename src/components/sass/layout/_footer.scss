@@ -1,0 +1,23 @@
+.footer-logo {
+  display: block;
+  margin: auto;
+  width: clamp(100px, 50vw, 400px);
+}
+
+footer {
+  background-color: $gray;
+  padding: 1em 0;
+  ul {
+    list-style: none;
+    font-weight: 700;
+    a {
+      color: $red;
+      transition: all 0.4s ease;
+      text-decoration: none;
+      text-transform: uppercase;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
