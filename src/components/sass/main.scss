@@ -70,12 +70,13 @@
 //  layout
 @import "layout/navigation";
 @import "layout/footer";
+@import "layout/desktop-layout";
 
 // components
 @import "sass-components/blogroll";
 
 // pages
-@import "pages/index-page.scss";
+@import "pages/index-page";
 
 // theme
 @import "theme";

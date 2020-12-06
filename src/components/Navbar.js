@@ -1,15 +1,14 @@
-import React from 'react'
-import logo from '../img/logo.svg'
+import React from "react";
+import logo from "../img/logo.svg";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-
 
 const Navbar = class extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: false,
-      navBarActiveClass: '',
-    }
+      navBarActiveClass: "",
+    };
   }
 
   toggleHamburger = () => {
@@ -23,22 +22,18 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'active',
+              navBarActiveClass: "active",
             })
           : this.setState({
-              navBarActiveClass: '',
-            })
+              navBarActiveClass: "",
+            });
       }
-    )
-  }
+    );
+  };
 
   render() {
     return (
-      <nav
-        className="navbar"
-        role="navigation"
-        aria-label="main-navigation"
-      >
+      <nav className="navbar" role="navigation" aria-label="main-navigation">
         <div className="container">
           <div className="navbar-brand">
             {/* Hamburger menu */}
@@ -51,46 +46,92 @@ const Navbar = class extends React.Component {
               <span></span>
               <span></span>
             </button>
-            <AniLink cover direction="up" bg="#ec1212" to="/" className="nav-logo" title="Logo">
-              <img src={logo} alt="Stop Evictions Virginia Logo"/>
+            <AniLink
+              cover
+              direction="up"
+              bg="#ec1212"
+              to="/"
+              className="nav-logo"
+              title="Logo"
+            >
+              <img src={logo} alt="Stop Evictions Virginia Logo" />
             </AniLink>
-            
           </div>
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-links">
-              <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/">
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item"
+                activeClassName="active"
+                to="/"
+              >
                 Stories
               </AniLink>
-              <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/about">
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item"
+                activeClassName="active"
+                to="/about"
+              >
                 About
               </AniLink>
-              <AniLink cover bg="#ec1212" className="navbar-item" activeClassName="active" to="/products">
+
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item"
+                activeClassName="active"
+                to="/products"
+              >
                 Get Help
               </AniLink>
-              <AniLink  cover bg="#ec1212"className="navbar-item sub-item" activeClassName="active" to="/contact">
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item sub-item"
+                activeClassName="active"
+                to="/contact"
+              >
                 Legal Help
               </AniLink>
-              <AniLink  cover bg="#ec1212"className="navbar-item sub-item" activeClassName="active" to="/contact">
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item sub-item"
+                activeClassName="active"
+                to="/contact"
+              >
                 Housing Justice
               </AniLink>
-              <AniLink  cover bg="#ec1212"className="navbar-item sub-item" activeClassName="active" to="/contact">
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item sub-item"
+                activeClassName="active"
+                to="/contact"
+              >
                 VPLC
               </AniLink>
-              <AniLink  cover bg="#ec1212"className="navbar-item" activeClassName="active" to="/blog">
+              <AniLink
+                cover
+                bg="#ec1212"
+                className="navbar-item"
+                activeClassName="active"
+                to="/blog"
+              >
                 Blog
               </AniLink>
-              
-              
             </div>
-            
           </div>
         </div>
       </nav>
-    )
+    );
   }
-}
+};
 
-export default Navbar
+export default Navbar;

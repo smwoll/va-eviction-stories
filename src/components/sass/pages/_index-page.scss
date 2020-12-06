@@ -34,3 +34,53 @@
     display: none;
   }
 }
+
+// entry animation
+@keyframes fade-entry-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wipeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.entry-banner {
+  background-color: $red;
+  padding: 1em;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  place-items: center;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  pointer-events: none;
+  animation: wipeout 2s ease 1s 1 both;
+  p {
+    color: $dark;
+    font-size: clamp(1em, 15vw, 5em);
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    line-height: 100%;
+    span:nth-child(2),
+    span:nth-child(8) {
+      color: $white;
+    }
+  }
+}

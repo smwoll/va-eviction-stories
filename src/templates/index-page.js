@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
+import EntryBanner from "../components/EntryBanner";
 
 export const IndexPageTemplate = ({ title, subheading, description }) => (
   <div>
@@ -48,6 +49,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <EntryBanner />
       <IndexPageTemplate
         title={frontmatter.title}
         subheading={frontmatter.subheading}
