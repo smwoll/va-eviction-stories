@@ -1,5 +1,5 @@
 ---
-templateKey: stories-post
+templateKey: Stories-post
 title: Timothy Chalamet
 date: 2020-12-02T04:48:06.101Z
 description: Cupidatat non proident, sunt in culpa qui officia deserunt mollit
