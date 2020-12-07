@@ -22,17 +22,17 @@ export const IndexPageTemplate = ({ title, subheading, description }) => (
         <div className="hero-wrapper">
           <div className="lead-text-box">
             <h1 className="heading">{title}</h1>
-            <h3 className="subheading">{subheading}</h3>
+            <h2 className="subheading">{subheading}</h2>
           </div>
         </div>
         <div className="description-wrapper">
           <p>{description}</p>
         </div>
 
-        <div className="blogroll-wrapper">
-          <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
+        <section className="blogroll-wrapper">
+          <h2 className="section-heading">Latest stories</h2>
           <BlogRoll />
-        </div>
+        </section>
       </div>
     </main>
   </div>
