@@ -96,7 +96,7 @@ const Navbar = class extends React.Component {
                 bg="#ec1212"
                 className="navbar-item sub-item"
                 activeClassName="active"
-                to="/blog"
+                to="/stories"
               >
                 Legal Help
               </AniLink>
@@ -105,7 +105,7 @@ const Navbar = class extends React.Component {
                 bg="#ec1212"
                 className="navbar-item sub-item"
                 activeClassName="active"
-                to="/blog"
+                to="/stories"
               >
                 Housing Justice
               </AniLink>
@@ -114,7 +114,7 @@ const Navbar = class extends React.Component {
                 bg="#ec1212"
                 className="navbar-item sub-item"
                 activeClassName="active"
-                to="/blog"
+                to="/stories"
               >
                 VPLC
               </AniLink>

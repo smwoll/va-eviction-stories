@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import BlogRoll from "../components/BlogRoll";
+import StoriesRoll from "../components/StoriesRoll";
 import EntryBanner from "../components/EntryBanner";
 
 export const IndexPageTemplate = ({ title, subheading, description }) => (
@@ -29,9 +29,9 @@ export const IndexPageTemplate = ({ title, subheading, description }) => (
           <p>{description}</p>
         </div>
 
-        <section className="blogroll-wrapper">
+        <section className="Storiesroll-wrapper">
           <h2 className="section-heading">Latest stories</h2>
-          <BlogRoll />
+          <StoriesRoll />
         </section>
       </div>
     </main>

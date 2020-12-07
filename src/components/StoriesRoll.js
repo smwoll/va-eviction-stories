@@ -4,17 +4,17 @@ import { graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-class BlogRoll extends React.Component {
+class StoriesRoll extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="blogroll-grid">
+      <div className="Storiesroll-grid">
         {posts &&
           posts.map(({ node: post }) => (
             <div
-              className={`card blog-list-item ${
+              className={`card Stories-list-item ${
                 post.frontmatter.featuredpost ? "featured" : ""
               }`}
               key={post.id}
@@ -66,7 +66,7 @@ class BlogRoll extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+StoriesRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -77,10 +77,10 @@ BlogRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query StoriesRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "Stories-post" } } }
         ) {
           edges {
             node {
@@ -107,6 +107,6 @@ export default () => (
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <StoriesRoll data={data} count={count} />}
   />
 );
