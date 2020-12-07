@@ -1,5 +1,5 @@
 ---
-templateKey: Stories-post
+templateKey: stories-post
 title: Scott Wall - Featured
 date: 2020-12-05T17:56:51.838Z
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

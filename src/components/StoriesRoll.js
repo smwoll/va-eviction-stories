@@ -80,7 +80,7 @@ export default () => (
       query StoriesRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "Stories-post" } } }
+          filter: { frontmatter: { templateKey: { eq: "stories-post" } } }
         ) {
           edges {
             node {

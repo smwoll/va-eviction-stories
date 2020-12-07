@@ -1,5 +1,5 @@
 ---
-templateKey: Stories-post
+templateKey: stories-post
 title: Skyland Woll
 date: 2020-12-02T04:44:46.918Z
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

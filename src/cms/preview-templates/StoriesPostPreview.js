@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { StoriesPostTemplate } from "../../templates/Stories-post";
+import { StoriesPostTemplate } from "../../templates/stories-post";
 
 const StoriesPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(["data", "tags"]);
