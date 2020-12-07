@@ -1,5 +1,5 @@
 ---
-templateKey: Stories-post
+templateKey: stories-post
 title: Scott Smithson
 date: 2020-12-02T04:45:55.508Z
 description: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
