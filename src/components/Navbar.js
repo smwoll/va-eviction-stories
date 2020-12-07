@@ -118,15 +118,6 @@ const Navbar = class extends React.Component {
               >
                 VPLC
               </AniLink>
-              <AniLink
-                cover
-                bg="#ec1212"
-                className="navbar-item"
-                activeClassName="active"
-                to="/blog"
-              >
-                Blog
-              </AniLink>
             </div>
           </div>
         </div>
