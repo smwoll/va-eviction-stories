@@ -57,9 +57,9 @@ const Footer = class extends React.Component {
                         cover
                         bg="#ec1212"
                         className="navbar-item"
-                        to="/products"
+                        to="/help"
                       >
-                        Products
+                        Help
                       </AniLink>
                     </li>
                   </ul>

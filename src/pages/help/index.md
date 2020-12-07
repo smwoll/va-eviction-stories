@@ -1,9 +1,9 @@
 ---
 templateKey: "help-page"
 path: /help
-title: Our Coffee
+title: Get Help
 image: /img/jumbotron.jpg
-heading: Great coffee with a conscience
+heading: Get help if you are facing eviction
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,

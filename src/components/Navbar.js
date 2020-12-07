@@ -87,7 +87,7 @@ const Navbar = class extends React.Component {
                 bg="#ec1212"
                 className="navbar-item"
                 activeClassName="active"
-                to="/products"
+                to="/help"
               >
                 Get Help
               </AniLink>
