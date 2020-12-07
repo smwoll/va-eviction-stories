@@ -19,12 +19,10 @@ export const HelpPageTemplate = ({
   pricing,
 }) => (
   <div className="content">
-    <div className="full-width-image-container margin-top-0">
-      <h2 className="has-text-weight-bold is-size-1">{title}</h2>
-    </div>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
+          <h2 className="title">{title}</h2>
           <div className="columns">
             <div className="column is-7 is-offset-1">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
