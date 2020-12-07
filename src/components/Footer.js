@@ -62,16 +62,6 @@ const Footer = class extends React.Component {
                         Products
                       </AniLink>
                     </li>
-                    <li>
-                      <AniLink
-                        cover
-                        bg="#ec1212"
-                        className="navbar-item"
-                        to="/contact/examples"
-                      >
-                        Form Examples
-                      </AniLink>
-                    </li>
                   </ul>
                 </section>
               </div>
