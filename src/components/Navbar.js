@@ -91,33 +91,6 @@ const Navbar = class extends React.Component {
               >
                 Get Help
               </AniLink>
-              <AniLink
-                cover
-                bg="#ec1212"
-                className="navbar-item sub-item"
-                activeClassName="active"
-                to="/help"
-              >
-                Legal Help
-              </AniLink>
-              <AniLink
-                cover
-                bg="#ec1212"
-                className="navbar-item sub-item"
-                activeClassName="active"
-                to="/help"
-              >
-                Housing Justice
-              </AniLink>
-              <AniLink
-                cover
-                bg="#ec1212"
-                className="navbar-item sub-item"
-                activeClassName="active"
-                to="/help"
-              >
-                VPLC
-              </AniLink>
             </div>
           </div>
         </div>
