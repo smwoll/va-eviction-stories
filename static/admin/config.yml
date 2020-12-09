@@ -32,6 +32,7 @@ collections:
           name: "featuredpost",
           widget: "boolean",
           required: false,
+          hint: "If selected, the featured post will take up mroe space on the story grid on desktop.",
         }
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
