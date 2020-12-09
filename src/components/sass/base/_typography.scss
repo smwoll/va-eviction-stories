@@ -15,6 +15,9 @@ h1 {
   margin: 0.67rem 0;
 }
 
-h1.heading {
-  font-size: 3em;
+// desktop font sizing
+@include media(">medium") {
+  h1.heading {
+    font-size: 3em;
+  }
 }

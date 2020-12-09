@@ -57,15 +57,15 @@
 // abstracts
 @import "colors";
 
-// base
-// customized normalize.scss to fix issue with html line height resizing
-@import "base/normalize";
-@import "base/typography";
-
 // vendor - stuff from someone else
 // custom breakpoints has the breakpoints changed from default to small, medium, large
 @import "vendor/include-media";
 @import "vendor/custom-breakpoints";
+
+// base
+// customized normalize.scss to fix issue with html line height resizing
+@import "base/normalize";
+@import "base/typography";
 
 //  layout
 @import "layout/navigation";
