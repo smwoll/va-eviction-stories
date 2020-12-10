@@ -49,7 +49,7 @@ class StoriesRoll extends React.Component {
                     <span className="date">{post.frontmatter.date}</span>
                   </p>
                 </header>
-                <p>{post.excerpt}</p>
+                <p>{post.frontmatter.description}</p>
                 <AniLink
                   cover
                   bg="#ec1212"
@@ -93,6 +93,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                description
                 featuredpost
                 featuredimage {
                   childImageSharp {
