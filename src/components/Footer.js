@@ -11,7 +11,7 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <div className="footer-logo-wrapper">
+        <div className="footer-lead-text">
           <AniLink
             cover
             bg="#ec1212"
@@ -19,11 +19,14 @@ const Footer = class extends React.Component {
             to="/"
             className="navbar-item"
           >
-            <img
-              src={logo}
-              alt="Stop Evictions Virginia Logo"
-              className="footer-logo"
-            />
+            <span>No</span>
+            <span>person</span>
+            <span>should</span>
+            <span>be</span>
+            <span>evicted</span>
+            <span>during</span>
+            <span>a</span>
+            <span>pandemic.</span>
           </AniLink>
         </div>
         <div className="content">
@@ -39,7 +42,7 @@ const Footer = class extends React.Component {
                         to="/"
                         className="navbar-item"
                       >
-                        Home
+                        Stories
                       </AniLink>
                     </li>
                     <li>
@@ -59,8 +62,11 @@ const Footer = class extends React.Component {
                         className="navbar-item"
                         to="/help"
                       >
-                        Help
+                        Get Help
                       </AniLink>
+                    </li>
+                    <li>
+                      <a href="/">Privacy Policy</a>
                     </li>
                   </ul>
                 </section>
