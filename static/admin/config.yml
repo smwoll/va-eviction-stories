@@ -26,13 +26,18 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          hint: "This text will appear in story previews on the front page.",
+        }
       - {
           label: "Featured Post",
           name: "featuredpost",
           widget: "boolean",
           required: false,
-          hint: "If selected, the featured post will take up mroe space on the story grid on desktop.",
+          hint: "If selected, the featured post will take up more space on the story grid on desktop.",
         }
       - {
           label: "Featured Image",
@@ -57,7 +62,12 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          hint: "This short description will display on the Help Page and its list of resources.",
+        }
       - {
           label: "Featured Image",
           name: "featuredimage",
