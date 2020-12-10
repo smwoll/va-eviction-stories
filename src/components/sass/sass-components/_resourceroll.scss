@@ -1,0 +1,65 @@
+.resourceroll-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -1em;
+}
+.resourceroll-grid .card {
+  display: block;
+  width: 100%;
+  margin: 1em;
+  border: 5px $red solid;
+  padding: 1em;
+  overflow-x: none;
+  transition: all 0.2s ease;
+  .title {
+    font-size: 2em;
+    font-weight: 700;
+    color: $white;
+    display: block;
+    text-decoration: none;
+  }
+  .date {
+    font-size: 1rem;
+  }
+  img {
+    border-radius: 0;
+  }
+  &:hover {
+    transform: scale(1.01);
+    .read-more {
+      visibility: visible;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+.read-more {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include media(">medium") {
+    visibility: invisible;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateX(-20px);
+  }
+}
+
+// media sizing for resourceroll grid
+@include media(">small") {
+  .resourceroll-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card {
+      flex: 1 1 100%; /*  Stretching: */
+      margin: 1em;
+    }
+    .card.featured {
+      flex: 1 1 600px; /*  Stretching: */
+    }
+  }
+}

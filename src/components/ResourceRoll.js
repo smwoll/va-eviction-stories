@@ -10,7 +10,7 @@ class ResourceRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
-      <div className="ResourceRoll-grid">
+      <div className="resourceroll-grid">
         {posts &&
           posts.map(({ node: post }) => (
             <div
