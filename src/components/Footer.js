@@ -1,6 +1,8 @@
 import React from "react";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+import NVMlogo from "../img/NVM-logo.png";
+
 const Footer = class extends React.Component {
   render() {
     return (
@@ -24,8 +26,13 @@ const Footer = class extends React.Component {
           </AniLink>
         </div>
         <div className="content">
-          <div className="container">
-            <div style={{ maxWidth: "100vw" }} className="columns">
+          <div className="container-fluid">
+            <div className="footer-cta">
+              <a className="cta-button" href="#">
+                Take Action
+              </a>
+            </div>
+            <div style={{ maxWidth: "100vw" }} className="footer-blocks">
               <div className="footer-menu">
                 <section className="menu">
                   <ul className="menu-list">
@@ -64,6 +71,19 @@ const Footer = class extends React.Component {
                     </li>
                   </ul>
                 </section>
+              </div>
+              <div className="footer-credit">
+                <p>Paid for by New Virginia Majority.</p>
+              </div>
+              <div className="NVM-logo">
+                <a
+                  href="https://www.newvirginiamajority.org/"
+                  target="_blank"
+                  title="New Virginia Majority Website"
+                  rel="noopener noreferrer"
+                >
+                  <img src={NVMlogo} alt="New Virginia Majority Logo" />
+                </a>
               </div>
             </div>
           </div>

@@ -49,3 +49,30 @@ footer {
     }
   }
 }
+
+// footer blocks
+.footer-blocks {
+  display: grid;
+  padding-bottom: 50px;
+  @include media(">medium") {
+    grid-template: auto 1fr auto / auto 1fr auto;
+    place-items: center;
+  }
+}
+
+.footer-cta {
+  display: block;
+  text-align: center;
+  padding: 1em;
+}
+
+.footer-credit {
+  display: grid;
+  place-items: center;
+  p {
+    border: 4px solid $white;
+    font-weight: 600;
+    padding: 1em 2em;
+    text-transform: uppercase;
+  }
+}

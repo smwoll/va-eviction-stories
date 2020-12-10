@@ -1,3 +1,17 @@
 .cta-button {
   background-color: $red;
+  font-size: 1.2em;
+  font-weight: 700;
+  width: max-content;
+  display: inline-block;
+  color: $white;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: $white -4px 4px;
+  transition: all ease 0.2s;
+  &:hover {
+    box-shadow: -7px 7px;
+    transform: translate(3px, -3px);
+  }
 }
