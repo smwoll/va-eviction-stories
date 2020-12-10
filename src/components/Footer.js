@@ -19,14 +19,14 @@ const Footer = class extends React.Component {
             to="/"
             className="navbar-item"
           >
-            <span>No</span>
-            <span>person</span>
-            <span>should</span>
-            <span>be</span>
-            <span>evicted</span>
-            <span>during</span>
-            <span>a</span>
-            <span>pandemic.</span>
+            <span>No&nbsp;</span>
+            <span>person&nbsp;</span>
+            <span>should&nbsp;</span>
+            <span>be&nbsp;</span>
+            <span>evicted&nbsp;</span>
+            <span>during&nbsp;</span>
+            <span>a&nbsp;</span>
+            <span>pandemic.&nbsp;</span>
           </AniLink>
         </div>
         <div className="content">
