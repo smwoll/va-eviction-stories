@@ -46,7 +46,7 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["Story"] }
 
   - name: "resources"
     label: "Help Resources"
