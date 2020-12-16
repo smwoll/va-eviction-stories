@@ -33,17 +33,18 @@
       transform: translateX(0);
     }
   }
-  .read-more {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    @include media(">medium") {
-      visibility: invisible;
-      opacity: 0;
-      transition: all 0.4s ease;
-      transform: translateX(-20px);
-    }
+}
+
+.read-more {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include media(">medium") {
+    visibility: invisible;
+    opacity: 0;
+    transition: all 0.4s ease;
+    transform: translateX(-20px);
   }
 }
 
@@ -56,6 +57,9 @@
     .card {
       flex: 1 1 100%; /*  Stretching: */
       margin: 1em;
+    }
+    .card.featured {
+      flex: 1 1 600px; /*  Stretching: */
     }
   }
 }
