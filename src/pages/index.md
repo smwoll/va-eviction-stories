@@ -1,7 +1,7 @@
 ---
 heading: oops
 templateKey: index-page
-subheading: Example of a subheading
+subheading: Stories about what the eviction looks like from people across the commonwealth
 mainpitch:
   title: Why Kaldi
   description: >
@@ -9,6 +9,6 @@ mainpitch:
     shouldn't just taste good, it should do good too. We source all of our beans
     directly from small scale sustainable farmers and make sure part of the
     profits are reinvested in their communities.
-title: Stories from people facing eviction in Virginia
-description: Example of description text
+title: Facing Eviction in Virginia
+description: ""
 ---
