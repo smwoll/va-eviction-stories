@@ -27,14 +27,7 @@ class ResourceRoll extends React.Component {
                       bg="#ec1212"
                       to={post.fields.slug}
                       className="featured-thumbnail"
-                    >
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </AniLink>
+                    ></AniLink>
                   ) : null}
                   <p className="post-meta">
                     <AniLink
