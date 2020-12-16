@@ -39,6 +39,7 @@
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.4em;
   font-weight: 700;
   @include media(">medium") {
     visibility: invisible;
