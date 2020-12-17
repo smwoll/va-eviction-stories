@@ -201,6 +201,9 @@
 // nav news
 .nav-news {
   border: 0px $red solid;
+  @include media("<large") {
+    display: none;
+  }
 
   @include media(">large") {
     max-width: 20vw;
