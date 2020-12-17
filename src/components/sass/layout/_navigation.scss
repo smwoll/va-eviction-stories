@@ -200,7 +200,8 @@
 
 // nav news
 .nav-news {
-  border: 0px $red solid;
+  border: 3px $red solid;
+  padding: 10px;
   @include media("<large") {
     display: none;
   }
