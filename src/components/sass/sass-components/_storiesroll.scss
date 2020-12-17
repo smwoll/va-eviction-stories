@@ -1,3 +1,5 @@
+.Storiesroll-wrapper {
+}
 .Storiesroll-grid {
   display: flex;
   flex-wrap: wrap;
@@ -59,11 +61,15 @@
     flex-wrap: wrap;
     justify-content: center;
     .card {
-      flex: 1 1 400px; /*  Stretching: */
+      flex: 1 0 220px; /*  Stretching: */
       margin: 1em;
+      padding: 1.5em;
     }
     .card.featured {
-      flex: 1 1 600px; /*  Stretching: */
+      flex: 1 0 300px; /*  Stretching: */
+    }
+    .featured-thumbnail {
+      display: block;
     }
   }
 }
