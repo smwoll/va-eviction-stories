@@ -6,6 +6,7 @@ description: Nely Diaz, a single mother of 2, lost income due to COVID. She was
   finally able to get some rental assistance, and is now helping others navigate
   the bureacracy of eviction avoidance.
 featuredpost: true
+featuredimage: /img/nely-diaz.jpeg
 tags:
   - story
 ---
