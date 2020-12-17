@@ -35,19 +35,6 @@
   }
 }
 
-.read-more {
-  display: block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  @include media(">medium") {
-    visibility: invisible;
-    opacity: 0;
-    transition: all 0.4s ease;
-    transform: translateX(-20px);
-  }
-}
-
 // media sizing for resourceroll grid
 @include media(">small") {
   .resourceroll-grid {
