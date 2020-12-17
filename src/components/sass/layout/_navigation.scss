@@ -197,3 +197,36 @@
   top: 39px;
   left: 8px;
 }
+
+// nav news
+.nav-news {
+  border: 0px $red solid;
+
+  @include media(">large") {
+    max-width: 20vw;
+    margin-top: 20px;
+  }
+  h2 {
+    margin: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 1em 0;
+    }
+  }
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 700;
+    transition: all ease 0.4s;
+    &:hover {
+      background: $white;
+      background-size: cover;
+      color: $dark;
+    }
+  }
+}

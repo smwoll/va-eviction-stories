@@ -93,6 +93,57 @@ const Navbar = class extends React.Component {
               </AniLink>
             </div>
           </div>
+          <div className="nav-news">
+            <h2>Latest Headlines</h2>
+            <ul>
+              <li>
+                <a
+                  href="https://www.bloomberg.com/news/articles/2020-12-16/more-americans-are-too-sick-to-work-as-virus-cases-surge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  More Americans Are Too Sick to Work as Virus Cases Surge
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://richmond.com/news/state-and-regional/govt-and-politics/northams-budget-plan-protects-school-funding-pushes-teacher-pay-raises-and-adds-to-cash-reserve/article_e7ed7af1-fa94-5ccc-a525-642f74f532dc.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  More money is good, but this is nowhere near enough.
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.publicnewsservice.org/2020-12-16/childrens/pandemic-widens-racial-gap-in-meeting-va-families-basic-needs/a72492-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pandemic Widens Racial Gap in Meeting VA Families' Basic Needs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.politico.com/news/2020/12/15/louisville-eviction-ban-gref-fischer-445544"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Louisville mayor blasts proposal to only extend eviction ban
+                  by 30 days
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.csmonitor.com/USA/Politics/2020/1215/Am-I-going-to-be-evicted-Answer-now-may-hinge-on-Congress"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ‘Am I going to be evicted?’ Answer now may hinge on Congress.
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     );
