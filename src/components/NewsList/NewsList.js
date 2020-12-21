@@ -7,7 +7,7 @@ const NewsList = () => (
       {newslistdata.newslistitems.map((data, index) => {
         return (
           <li key={`content_item_${index}`}>
-            <a href="{data.url}" target="_blank" rel="noopener noreferrer">
+            <a href={data.url} target="_blank" rel="noopener noreferrer">
               {data.text}
             </a>
           </li>
