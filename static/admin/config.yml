@@ -122,7 +122,7 @@ collections:
         name: "newslist"
         fields:
           - {
-              label: "News item list",
+              label: "News Items",
               name: "newslistitems",
               widget: "list",
               fields:
