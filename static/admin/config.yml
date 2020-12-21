@@ -128,6 +128,6 @@ collections:
               fields:
                 [
                   { label: URL, name: url, widget: string },
-                  { label: Text, name: text, widget: text },
+                  { label: Text, name: text, widget: string },
                 ],
             }
