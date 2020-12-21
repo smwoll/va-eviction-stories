@@ -117,7 +117,7 @@ collections:
   - name: "lists"
     label: "Lists"
     files:
-      - file: "src/components/NewsList/index.md"
+      - file: "src/components/NewsList/newslist.json"
         label: "News List"
         name: "newslist"
         fields:
