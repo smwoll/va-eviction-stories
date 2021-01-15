@@ -1,6 +1,6 @@
 # VA Eviction Stories
 
-This is a custom site developed to tell the stories of people facing eviction in Virginia. It is based upon the Gatsby + Netlify CMS Starter, and the documentation below is for the general [Gatsby + Netlify CMS starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms).
+This is a custom site developed to tell the stories of people facing eviction in Virginia. It is based upon the Gatsby + Netlify CMS Starter, and the documentation below is for the general [Gatsby + Netlify CMS starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms). The starter uses Bulma which I dropped to instead use custom styling throughout.
 
 ## Gatsby + Netlify CMS Starter
 
