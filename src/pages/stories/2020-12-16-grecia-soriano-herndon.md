@@ -1,9 +1,9 @@
 ---
 templateKey: stories-post
-title: Grecia Soriano, Herndon
+title: Grecia Alan
 date: 2020-12-16T15:28:35.702Z
 description: '"It has been a challenge to pay rent with a check of $200 per week."'
-featuredimage: /img/grecia-soriano-image-2020-12-01-at-4.32.33-pm.jpeg
+featuredimage: /img/pexels-travis-saylor-951408.jpg
 tags:
   - Story
 ---
