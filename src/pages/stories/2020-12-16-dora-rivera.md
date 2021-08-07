@@ -1,9 +1,9 @@
 ---
 templateKey: stories-post
-title: Dora Rivera
+title: Rebecca Smith
 date: 2020-12-16T15:37:01.050Z
 description: '"We need help until this pandemic passes, please."'
-featuredimage: /img/dora-rivera-2020-12-01-at-5.27.07-pm.jpeg
+featuredimage: /img/liv-bruce-m0ovpgswk1e-unsplash.jpg
 tags:
   - story
 ---
